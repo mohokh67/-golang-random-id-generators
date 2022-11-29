@@ -8,14 +8,14 @@ import (
 
 func UUIDGenerator() {
 	id := uuid.New()
-	// fmt.Printf("Generated UUID: %s\n", id)
+	fmt.Printf("Generated UUID: %s\n", id)
 	fmt.Printf("String: %s\n", id.String())
-	// fmt.Printf("Time: %v\n", id.Time())
-	// fmt.Printf("ClockSequence: %v\n", id.ClockSequence())
-	// fmt.Printf("Version: %s\n", id.Version())
-	// fmt.Printf("ID: %v\n", id.ID())
-	// fmt.Printf("urn: %s\n", id.URN())
-	// fmt.Printf("Variant: %s\n", id.Variant())
+	fmt.Printf("Time: %v\n", id.Time())
+	fmt.Printf("ClockSequence: %v\n", id.ClockSequence())
+	fmt.Printf("Version: %s\n", id.Version())
+	fmt.Printf("ID: %v\n", id.ID())
+	fmt.Printf("urn: %s\n", id.URN())
+	fmt.Printf("Variant: %s\n", id.Variant())
 
 	fmt.Println("------------------------ String")
 

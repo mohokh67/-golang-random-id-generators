@@ -10,17 +10,17 @@ import (
 )
 
 func KSUIDGenerator() {
-	// ksuidExample := ksuid.New()
-	// fmt.Printf("KSUID example: %s\n", ksuidExample)
-	// fmt.Printf("KSUID string: %s\n", ksuidExample.String())
-	// fmt.Println(ksuidExample.Payload())
-	// fmt.Printf("KSUID time: %s\n", ksuidExample.Time())
-	// fmt.Printf("KSUID timestamp: %d\n", ksuidExample.Timestamp())
+	ksuidExample := ksuid.New()
+	fmt.Printf("KSUID example: %s\n", ksuidExample)
+	fmt.Printf("KSUID string: %s\n", ksuidExample.String())
+	fmt.Println(ksuidExample.Payload())
+	fmt.Printf("KSUID time: %s\n", ksuidExample.Time())
+	fmt.Printf("KSUID timestamp: %d\n", ksuidExample.Timestamp())
 
-	// fmt.Println("------------------------ Next and Prev")
+	fmt.Println("------------------------ Next and Prev")
 
-	// fmt.Printf("Next ID after KSUID: %s\n", ksuidExample.Next())
-	// fmt.Printf("Previous ID after KSUID: %s\n", ksuidExample.Prev())
+	fmt.Printf("Next ID after KSUID: %s\n", ksuidExample.Next())
+	fmt.Printf("Previous ID after KSUID: %s\n", ksuidExample.Prev())
 
 	fmt.Println("------------------------ Compare")
 
@@ -31,9 +31,9 @@ func KSUIDGenerator() {
 	}
 	ksuidToday := ksuid.New()
 	ksuidTomorrow, _ := ksuid.NewRandomWithTime(time.Now().AddDate(0, 0, +1))
-	// fmt.Printf("KSUID yesterday: %s\n", ksuidYesterday)
-	// fmt.Printf("KSUID today: %s\n", ksuidToday)
-	// fmt.Printf("KSUID tomorrow: %s\n", ksuidTomorrow)
+	fmt.Printf("KSUID yesterday: %s\n", ksuidYesterday)
+	fmt.Printf("KSUID today: %s\n", ksuidToday)
+	fmt.Printf("KSUID tomorrow: %s\n", ksuidTomorrow)
 
 	fmt.Printf("Compare KSUID yesterday and today: %d\n", ksuid.Compare(ksuidYesterday, ksuidToday))
 
